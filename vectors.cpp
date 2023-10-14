@@ -9,9 +9,18 @@ int main()
 	for (int item : data) {
 		cout << item << "\n";
 	}
-	cout << "--------------------";
+	cout << "--------------------\n";
 	vector<string> stroke = { "meow", "cute", "ooops", "hello" };
 	for (int i = 0; i < stroke.size(); ++i) {
 		cout << stroke[i] << "\n";
+	}
+	cout << "--------------------\n";
+	for (int j = 0; j < data.size(); ++j) {
+		if (data[j] % 2 == 0) {
+			cout << data[j] << "\n";
+		}
+		else {
+			continue;
+		}
 	}
 }
